@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
-import Link from 'next/Link'
+import Link from 'next/link'
 import Date from '../components/date'
 
 export async function getStaticProps() {
@@ -21,7 +21,7 @@ export default function Home( {allPostsData} ) {
         <title>{ siteTitle }</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Hi, I am Opu and I am a Software Engineer and I am currently working working on a React based project. You can contact me on <a href="https://www.linkedin.com/in/sazzad26/" target="_blank">LinkedIn</a></p>
+        <p>Hi, I am Opu and I am a Software Engineer and I am currently working working on a React based project. You can contact me on <a href="https://www.linkedin.com/in/sazzad26/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
       </section>
 
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
@@ -29,7 +29,7 @@ export default function Home( {allPostsData} ) {
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title}) => (
           <li className={utilStyles.listItem} key={id}>
-            <Link href={`/posts/${id}`}>
+            <Link href={`/posts/${id}`} >
               <a>{title}</a>
             </Link>
             <br />
