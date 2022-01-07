@@ -1,2 +1,2 @@
 # My Blog site based on NextJs
- This site is devloped using the nextJs fundamentals
+ This site is devloped using the nextJs basic feature
