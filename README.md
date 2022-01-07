@@ -1,2 +1,2 @@
-# nextjs-blog
- A Blog site based on Next Js
+# My Blog site based on NextJs
+ This site is devloped using the nextJs fundamentals
